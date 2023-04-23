@@ -1,0 +1,19 @@
+dataset_params:
+  root_dir: data/hm36
+  # add
+  dataset:
+    name: 'hm36_world'
+    path: 'data/hm36'
+    train_image_set: 'train'
+    test_image_set: 'valid'
+    sample_interval: 60    # min random sample gap
+    extra_param: ''  # add desciption for cached pkl
+  use_full_kp: False
+
+train_params:
+  # add
+  use_philly: False
+  patch_width: 256
+  patch_height: 256
+  rect_3d_width: 2000
+  rect_3d_height: 2000
